@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5245B77D230D71A4005D20F5 /* Aileron-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5245B77C230D71A4005D20F5 /* Aileron-Bold.otf */; };
 		5268B2F1230AC7D200AEDEBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5268B2F0230AC7D200AEDEBD /* AppDelegate.swift */; };
 		5268B2F3230AC7D200AEDEBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5268B2F2230AC7D200AEDEBD /* SceneDelegate.swift */; };
 		5268B2F5230AC7D200AEDEBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5268B2F4230AC7D200AEDEBD /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5245B77C230D71A4005D20F5 /* Aileron-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-Bold.otf"; path = "../../../../../Desktop/aileron/Aileron-Bold.otf"; sourceTree = "<group>"; };
 		5268B2ED230AC7D200AEDEBD /* UrBack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrBack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5268B2F0230AC7D200AEDEBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5268B2F2230AC7D200AEDEBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			children = (
 				5268B30A230C2BD600AEDEBD /* Aileron-Regular.otf */,
 				5268B308230C279600AEDEBD /* Aileron-SemiBold.otf */,
+				5245B77C230D71A4005D20F5 /* Aileron-Bold.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				5268B300230AC7D500AEDEBD /* LaunchScreen.storyboard in Resources */,
 				5268B309230C279600AEDEBD /* Aileron-SemiBold.otf in Resources */,
 				5268B2FD230AC7D500AEDEBD /* Assets.xcassets in Resources */,
+				5245B77D230D71A4005D20F5 /* Aileron-Bold.otf in Resources */,
 				5268B2F8230AC7D200AEDEBD /* Main.storyboard in Resources */,
 				5268B30B230C2BD600AEDEBD /* Aileron-Regular.otf in Resources */,
 			);
