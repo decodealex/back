@@ -17,6 +17,8 @@
 		5268B300230AC7D500AEDEBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5268B2FE230AC7D500AEDEBD /* LaunchScreen.storyboard */; };
 		5268B309230C279600AEDEBD /* Aileron-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5268B308230C279600AEDEBD /* Aileron-SemiBold.otf */; };
 		5268B30B230C2BD600AEDEBD /* Aileron-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5268B30A230C2BD600AEDEBD /* Aileron-Regular.otf */; };
+		5291B36E230D7A450017E08F /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291B36D230D7A450017E08F /* LocalNotificationManager.swift */; };
+		5291B370230D7A760017E08F /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291B36F230D7A760017E08F /* Notification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		5268B301230AC7D500AEDEBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5268B308230C279600AEDEBD /* Aileron-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-SemiBold.otf"; path = "../../../../../Desktop/aileron/Aileron-SemiBold.otf"; sourceTree = "<group>"; };
 		5268B30A230C2BD600AEDEBD /* Aileron-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-Regular.otf"; path = "../../../../../Desktop/aileron/Aileron-Regular.otf"; sourceTree = "<group>"; };
+		5291B36D230D7A450017E08F /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		5291B36F230D7A760017E08F /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		5268B2EF230AC7D200AEDEBD /* UrBack */ = {
 			isa = PBXGroup;
 			children = (
+				5291B36C230D7A230017E08F /* Models */,
 				5268B2F0230AC7D200AEDEBD /* AppDelegate.swift */,
 				5268B2F2230AC7D200AEDEBD /* SceneDelegate.swift */,
 				5268B2F4230AC7D200AEDEBD /* ViewController.swift */,
@@ -85,6 +90,15 @@
 				5245B77C230D71A4005D20F5 /* Aileron-Bold.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5291B36C230D7A230017E08F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5291B36D230D7A450017E08F /* LocalNotificationManager.swift */,
+				5291B36F230D7A760017E08F /* Notification.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +177,8 @@
 			files = (
 				5268B2F5230AC7D200AEDEBD /* ViewController.swift in Sources */,
 				5268B2F1230AC7D200AEDEBD /* AppDelegate.swift in Sources */,
+				5291B370230D7A760017E08F /* Notification.swift in Sources */,
+				5291B36E230D7A450017E08F /* LocalNotificationManager.swift in Sources */,
 				5268B2F3230AC7D200AEDEBD /* SceneDelegate.swift in Sources */,
 				5268B2FB230AC7D200AEDEBD /* UrBack.xcdatamodeld in Sources */,
 			);
