@@ -14,6 +14,8 @@
 		5268B2FB230AC7D200AEDEBD /* UrBack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5268B2F9230AC7D200AEDEBD /* UrBack.xcdatamodeld */; };
 		5268B2FD230AC7D500AEDEBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5268B2FC230AC7D500AEDEBD /* Assets.xcassets */; };
 		5268B300230AC7D500AEDEBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5268B2FE230AC7D500AEDEBD /* LaunchScreen.storyboard */; };
+		5268B309230C279600AEDEBD /* Aileron-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5268B308230C279600AEDEBD /* Aileron-SemiBold.otf */; };
+		5268B30B230C2BD600AEDEBD /* Aileron-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5268B30A230C2BD600AEDEBD /* Aileron-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		5268B2FC230AC7D500AEDEBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5268B2FF230AC7D500AEDEBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5268B301230AC7D500AEDEBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5268B308230C279600AEDEBD /* Aileron-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-SemiBold.otf"; path = "../../../../../Desktop/aileron/Aileron-SemiBold.otf"; sourceTree = "<group>"; };
+		5268B30A230C2BD600AEDEBD /* Aileron-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-Regular.otf"; path = "../../../../../Desktop/aileron/Aileron-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +66,22 @@
 				5268B2F2230AC7D200AEDEBD /* SceneDelegate.swift */,
 				5268B2F4230AC7D200AEDEBD /* ViewController.swift */,
 				5268B2F6230AC7D200AEDEBD /* Main.storyboard */,
-				5268B2FC230AC7D500AEDEBD /* Assets.xcassets */,
 				5268B2FE230AC7D500AEDEBD /* LaunchScreen.storyboard */,
+				5268B2FC230AC7D500AEDEBD /* Assets.xcassets */,
+				5268B307230C274100AEDEBD /* Fonts */,
 				5268B301230AC7D500AEDEBD /* Info.plist */,
 				5268B2F9230AC7D200AEDEBD /* UrBack.xcdatamodeld */,
 			);
 			path = UrBack;
+			sourceTree = "<group>";
+		};
+		5268B307230C274100AEDEBD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5268B30A230C2BD600AEDEBD /* Aileron-Regular.otf */,
+				5268B308230C279600AEDEBD /* Aileron-SemiBold.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,8 +143,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5268B300230AC7D500AEDEBD /* LaunchScreen.storyboard in Resources */,
+				5268B309230C279600AEDEBD /* Aileron-SemiBold.otf in Resources */,
 				5268B2FD230AC7D500AEDEBD /* Assets.xcassets in Resources */,
 				5268B2F8230AC7D200AEDEBD /* Main.storyboard in Resources */,
+				5268B30B230C2BD600AEDEBD /* Aileron-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
