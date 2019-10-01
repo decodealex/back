@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5245B77D230D71A4005D20F5 /* Aileron-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5245B77C230D71A4005D20F5 /* Aileron-Bold.otf */; };
+		5201399D23168B150067359E /* IntervallsControllerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201399C23168B150067359E /* IntervallsControllerClass.swift */; };
 		5268B2F1230AC7D200AEDEBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5268B2F0230AC7D200AEDEBD /* AppDelegate.swift */; };
 		5268B2F3230AC7D200AEDEBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5268B2F2230AC7D200AEDEBD /* SceneDelegate.swift */; };
 		5268B2F5230AC7D200AEDEBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5268B2F4230AC7D200AEDEBD /* ViewController.swift */; };
@@ -15,14 +15,32 @@
 		5268B2FB230AC7D200AEDEBD /* UrBack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5268B2F9230AC7D200AEDEBD /* UrBack.xcdatamodeld */; };
 		5268B2FD230AC7D500AEDEBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5268B2FC230AC7D500AEDEBD /* Assets.xcassets */; };
 		5268B300230AC7D500AEDEBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5268B2FE230AC7D500AEDEBD /* LaunchScreen.storyboard */; };
-		5268B309230C279600AEDEBD /* Aileron-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5268B308230C279600AEDEBD /* Aileron-SemiBold.otf */; };
-		5268B30B230C2BD600AEDEBD /* Aileron-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5268B30A230C2BD600AEDEBD /* Aileron-Regular.otf */; };
+		527D8F2323168FD900809DAF /* SetTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D8F2223168FD900809DAF /* SetTimeController.swift */; };
 		5291B36E230D7A450017E08F /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291B36D230D7A450017E08F /* LocalNotificationManager.swift */; };
 		5291B370230D7A760017E08F /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291B36F230D7A760017E08F /* Notification.swift */; };
+		52BCCE0A23433EA600A4D368 /* PeriodTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BCCE0823433EA600A4D368 /* PeriodTimeView.swift */; };
+		52BCCE0B23433EA600A4D368 /* PeriodTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BCCE0923433EA600A4D368 /* PeriodTimeView.xib */; };
+		52FDD94A233CDA2900BC9F5A /* Aileron-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FDD939233CDA2800BC9F5A /* Aileron-SemiBoldItalic.otf */; };
+		52FDD94B233CDA2900BC9F5A /* Aileron-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FDD93A233CDA2800BC9F5A /* Aileron-LightItalic.otf */; };
+		52FDD94C233CDA2900BC9F5A /* Aileron-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FDD93B233CDA2800BC9F5A /* Aileron-HeavyItalic.otf */; };
+		52FDD94D233CDA2900BC9F5A /* CC0 1.0 Universal (CC0 1.0)  Public Domain Dedication.txt in Resources */ = {isa = PBXBuildFile; fileRef = 52FDD93C233CDA2800BC9F5A /* CC0 1.0 Universal (CC0 1.0)  Public Domain Dedication.txt */; };
+		52FDD94E233CDA2900BC9F5A /* Aileron-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FDD93D233CDA2800BC9F5A /* Aileron-Thin.otf */; };
+		52FDD94F233CDA2900BC9F5A /* Aileron-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FDD93E233CDA2800BC9F5A /* Aileron-Light.otf */; };
+		52FDD950233CDA2900BC9F5A /* Aileron-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FDD93F233CDA2800BC9F5A /* Aileron-Regular.otf */; };
+		52FDD951233CDA2900BC9F5A /* Aileron-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FDD940233CDA2800BC9F5A /* Aileron-SemiBold.otf */; };
+		52FDD952233CDA2900BC9F5A /* Aileron-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FDD941233CDA2800BC9F5A /* Aileron-UltraLight.otf */; };
+		52FDD953233CDA2900BC9F5A /* Aileron-UltraLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FDD942233CDA2800BC9F5A /* Aileron-UltraLightItalic.otf */; };
+		52FDD954233CDA2900BC9F5A /* Aileron-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FDD943233CDA2800BC9F5A /* Aileron-Black.otf */; };
+		52FDD955233CDA2900BC9F5A /* Aileron-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FDD944233CDA2900BC9F5A /* Aileron-BlackItalic.otf */; };
+		52FDD956233CDA2900BC9F5A /* Aileron-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FDD945233CDA2900BC9F5A /* Aileron-ThinItalic.otf */; };
+		52FDD957233CDA2900BC9F5A /* Aileron-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FDD946233CDA2900BC9F5A /* Aileron-Heavy.otf */; };
+		52FDD958233CDA2900BC9F5A /* Aileron-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FDD947233CDA2900BC9F5A /* Aileron-Bold.otf */; };
+		52FDD959233CDA2900BC9F5A /* Aileron-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FDD948233CDA2900BC9F5A /* Aileron-Italic.otf */; };
+		52FDD95A233CDA2900BC9F5A /* Aileron-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FDD949233CDA2900BC9F5A /* Aileron-BoldItalic.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5245B77C230D71A4005D20F5 /* Aileron-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-Bold.otf"; path = "../../../../../Desktop/aileron/Aileron-Bold.otf"; sourceTree = "<group>"; };
+		5201399C23168B150067359E /* IntervallsControllerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervallsControllerClass.swift; sourceTree = "<group>"; };
 		5268B2ED230AC7D200AEDEBD /* UrBack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrBack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5268B2F0230AC7D200AEDEBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5268B2F2230AC7D200AEDEBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,10 +50,28 @@
 		5268B2FC230AC7D500AEDEBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5268B2FF230AC7D500AEDEBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5268B301230AC7D500AEDEBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5268B308230C279600AEDEBD /* Aileron-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-SemiBold.otf"; path = "../../../../../Desktop/aileron/Aileron-SemiBold.otf"; sourceTree = "<group>"; };
-		5268B30A230C2BD600AEDEBD /* Aileron-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-Regular.otf"; path = "../../../../../Desktop/aileron/Aileron-Regular.otf"; sourceTree = "<group>"; };
+		527D8F2223168FD900809DAF /* SetTimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTimeController.swift; sourceTree = "<group>"; };
 		5291B36D230D7A450017E08F /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		5291B36F230D7A760017E08F /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		52BCCE0823433EA600A4D368 /* PeriodTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodTimeView.swift; sourceTree = "<group>"; };
+		52BCCE0923433EA600A4D368 /* PeriodTimeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeriodTimeView.xib; sourceTree = "<group>"; };
+		52FDD939233CDA2800BC9F5A /* Aileron-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-SemiBoldItalic.otf"; path = "aileron/Aileron-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		52FDD93A233CDA2800BC9F5A /* Aileron-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-LightItalic.otf"; path = "aileron/Aileron-LightItalic.otf"; sourceTree = "<group>"; };
+		52FDD93B233CDA2800BC9F5A /* Aileron-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-HeavyItalic.otf"; path = "aileron/Aileron-HeavyItalic.otf"; sourceTree = "<group>"; };
+		52FDD93C233CDA2800BC9F5A /* CC0 1.0 Universal (CC0 1.0)  Public Domain Dedication.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "CC0 1.0 Universal (CC0 1.0)  Public Domain Dedication.txt"; path = "aileron/CC0 1.0 Universal (CC0 1.0)  Public Domain Dedication.txt"; sourceTree = "<group>"; };
+		52FDD93D233CDA2800BC9F5A /* Aileron-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-Thin.otf"; path = "aileron/Aileron-Thin.otf"; sourceTree = "<group>"; };
+		52FDD93E233CDA2800BC9F5A /* Aileron-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-Light.otf"; path = "aileron/Aileron-Light.otf"; sourceTree = "<group>"; };
+		52FDD93F233CDA2800BC9F5A /* Aileron-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-Regular.otf"; path = "aileron/Aileron-Regular.otf"; sourceTree = "<group>"; };
+		52FDD940233CDA2800BC9F5A /* Aileron-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-SemiBold.otf"; path = "aileron/Aileron-SemiBold.otf"; sourceTree = "<group>"; };
+		52FDD941233CDA2800BC9F5A /* Aileron-UltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-UltraLight.otf"; path = "aileron/Aileron-UltraLight.otf"; sourceTree = "<group>"; };
+		52FDD942233CDA2800BC9F5A /* Aileron-UltraLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-UltraLightItalic.otf"; path = "aileron/Aileron-UltraLightItalic.otf"; sourceTree = "<group>"; };
+		52FDD943233CDA2800BC9F5A /* Aileron-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-Black.otf"; path = "aileron/Aileron-Black.otf"; sourceTree = "<group>"; };
+		52FDD944233CDA2900BC9F5A /* Aileron-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-BlackItalic.otf"; path = "aileron/Aileron-BlackItalic.otf"; sourceTree = "<group>"; };
+		52FDD945233CDA2900BC9F5A /* Aileron-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-ThinItalic.otf"; path = "aileron/Aileron-ThinItalic.otf"; sourceTree = "<group>"; };
+		52FDD946233CDA2900BC9F5A /* Aileron-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-Heavy.otf"; path = "aileron/Aileron-Heavy.otf"; sourceTree = "<group>"; };
+		52FDD947233CDA2900BC9F5A /* Aileron-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-Bold.otf"; path = "aileron/Aileron-Bold.otf"; sourceTree = "<group>"; };
+		52FDD948233CDA2900BC9F5A /* Aileron-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-Italic.otf"; path = "aileron/Aileron-Italic.otf"; sourceTree = "<group>"; };
+		52FDD949233CDA2900BC9F5A /* Aileron-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-BoldItalic.otf"; path = "aileron/Aileron-BoldItalic.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +104,8 @@
 		5268B2EF230AC7D200AEDEBD /* UrBack */ = {
 			isa = PBXGroup;
 			children = (
+				52BCCE0723433E5D00A4D368 /* Views */,
+				527D8F2123168FB000809DAF /* Controllers */,
 				5291B36C230D7A230017E08F /* Models */,
 				5268B2F0230AC7D200AEDEBD /* AppDelegate.swift */,
 				5268B2F2230AC7D200AEDEBD /* SceneDelegate.swift */,
@@ -85,20 +123,52 @@
 		5268B307230C274100AEDEBD /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				5268B30A230C2BD600AEDEBD /* Aileron-Regular.otf */,
-				5268B308230C279600AEDEBD /* Aileron-SemiBold.otf */,
-				5245B77C230D71A4005D20F5 /* Aileron-Bold.otf */,
+				52FDD943233CDA2800BC9F5A /* Aileron-Black.otf */,
+				52FDD944233CDA2900BC9F5A /* Aileron-BlackItalic.otf */,
+				52FDD947233CDA2900BC9F5A /* Aileron-Bold.otf */,
+				52FDD949233CDA2900BC9F5A /* Aileron-BoldItalic.otf */,
+				52FDD946233CDA2900BC9F5A /* Aileron-Heavy.otf */,
+				52FDD93B233CDA2800BC9F5A /* Aileron-HeavyItalic.otf */,
+				52FDD948233CDA2900BC9F5A /* Aileron-Italic.otf */,
+				52FDD93E233CDA2800BC9F5A /* Aileron-Light.otf */,
+				52FDD93A233CDA2800BC9F5A /* Aileron-LightItalic.otf */,
+				52FDD93F233CDA2800BC9F5A /* Aileron-Regular.otf */,
+				52FDD940233CDA2800BC9F5A /* Aileron-SemiBold.otf */,
+				52FDD939233CDA2800BC9F5A /* Aileron-SemiBoldItalic.otf */,
+				52FDD93D233CDA2800BC9F5A /* Aileron-Thin.otf */,
+				52FDD945233CDA2900BC9F5A /* Aileron-ThinItalic.otf */,
+				52FDD941233CDA2800BC9F5A /* Aileron-UltraLight.otf */,
+				52FDD942233CDA2800BC9F5A /* Aileron-UltraLightItalic.otf */,
+				52FDD93C233CDA2800BC9F5A /* CC0 1.0 Universal (CC0 1.0)  Public Domain Dedication.txt */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		527D8F2123168FB000809DAF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5201399C23168B150067359E /* IntervallsControllerClass.swift */,
+				527D8F2223168FD900809DAF /* SetTimeController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		5291B36C230D7A230017E08F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5291B36D230D7A450017E08F /* LocalNotificationManager.swift */,
 				5291B36F230D7A760017E08F /* Notification.swift */,
+				5291B36D230D7A450017E08F /* LocalNotificationManager.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		52BCCE0723433E5D00A4D368 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52BCCE0823433EA600A4D368 /* PeriodTimeView.swift */,
+				52BCCE0923433EA600A4D368 /* PeriodTimeView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,12 +229,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FDD955233CDA2900BC9F5A /* Aileron-BlackItalic.otf in Resources */,
 				5268B300230AC7D500AEDEBD /* LaunchScreen.storyboard in Resources */,
-				5268B309230C279600AEDEBD /* Aileron-SemiBold.otf in Resources */,
+				52FDD953233CDA2900BC9F5A /* Aileron-UltraLightItalic.otf in Resources */,
+				52FDD95A233CDA2900BC9F5A /* Aileron-BoldItalic.otf in Resources */,
+				52FDD959233CDA2900BC9F5A /* Aileron-Italic.otf in Resources */,
+				52FDD94E233CDA2900BC9F5A /* Aileron-Thin.otf in Resources */,
+				52FDD94A233CDA2900BC9F5A /* Aileron-SemiBoldItalic.otf in Resources */,
+				52FDD951233CDA2900BC9F5A /* Aileron-SemiBold.otf in Resources */,
 				5268B2FD230AC7D500AEDEBD /* Assets.xcassets in Resources */,
-				5245B77D230D71A4005D20F5 /* Aileron-Bold.otf in Resources */,
+				52FDD954233CDA2900BC9F5A /* Aileron-Black.otf in Resources */,
+				52FDD957233CDA2900BC9F5A /* Aileron-Heavy.otf in Resources */,
+				52FDD94D233CDA2900BC9F5A /* CC0 1.0 Universal (CC0 1.0)  Public Domain Dedication.txt in Resources */,
 				5268B2F8230AC7D200AEDEBD /* Main.storyboard in Resources */,
-				5268B30B230C2BD600AEDEBD /* Aileron-Regular.otf in Resources */,
+				52FDD94F233CDA2900BC9F5A /* Aileron-Light.otf in Resources */,
+				52FDD952233CDA2900BC9F5A /* Aileron-UltraLight.otf in Resources */,
+				52FDD94C233CDA2900BC9F5A /* Aileron-HeavyItalic.otf in Resources */,
+				52FDD956233CDA2900BC9F5A /* Aileron-ThinItalic.otf in Resources */,
+				52BCCE0B23433EA600A4D368 /* PeriodTimeView.xib in Resources */,
+				52FDD958233CDA2900BC9F5A /* Aileron-Bold.otf in Resources */,
+				52FDD94B233CDA2900BC9F5A /* Aileron-LightItalic.otf in Resources */,
+				52FDD950233CDA2900BC9F5A /* Aileron-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5201399D23168B150067359E /* IntervallsControllerClass.swift in Sources */,
+				527D8F2323168FD900809DAF /* SetTimeController.swift in Sources */,
+				52BCCE0A23433EA600A4D368 /* PeriodTimeView.swift in Sources */,
 				5268B2F5230AC7D200AEDEBD /* ViewController.swift in Sources */,
 				5268B2F1230AC7D200AEDEBD /* AppDelegate.swift in Sources */,
 				5291B370230D7A760017E08F /* Notification.swift in Sources */,

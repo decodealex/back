@@ -43,24 +43,34 @@ class LocalNotificationManager {
         }
     }
     
-    private func scheduleNotifications()
-    {
-        for notification in notifications
-        {
+    private func scheduleNotifications() {
+
+            let center = UNUserNotificationCenter.current()
             let content      = UNMutableNotificationContent()
-            content.title    = notification.title
+            content.title    = "Title l"
+            content.body     = "body doby"
             content.sound    = .default
 
-            let trigger = UNCalendarNotificationTrigger(dateMatching: notification.datetime, repeats: false)
-
-            let request = UNNotificationRequest(identifier: notification.id, content: content, trigger: trigger)
+//            var dateComponents = DateComponents()
+//            dateComponents.hour = 12
+//            dateComponents.minute = 56
+//            dateComponents.second = 15
+//
+        let date = Date().addingTimeInterval(5)
+        let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
+        
+//            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        
+            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+            center.add(request)
 
             UNUserNotificationCenter.current().add(request) { error in
 
                 guard error == nil else { return }
 
-                print("Notification scheduled! --- ID = \(notification.id)")
+                print("Notification scheduled! --- ID = \(dateComponents)")
             }
-        }
     }
 }

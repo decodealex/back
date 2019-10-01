@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,46 +23,52 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UrBack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOb-Za-orA" userLabel="middleView">
-                                <rect key="frame" x="0.0" y="44" width="375" height="639"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="572"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="middleView" translatesAutoresizingMaskIntoConstraints="NO" id="ahY-Wd-KLl">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="639"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="572"/>
                                     </imageView>
                                     <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="O1v-yd-s56">
-                                        <rect key="frame" x="20" y="289" width="335" height="320"/>
+                                        <rect key="frame" x="20" y="222" width="335" height="320"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="66e-Pf-MgN">
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="90"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Interval" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQZ-gg-92P">
-                                                        <rect key="frame" x="128.66666666666666" y="10.000000000000002" width="78" height="26.666666666666671"/>
+                                                        <rect key="frame" x="128.5" y="10" width="78" height="26.5"/>
                                                         <fontDescription key="fontDescription" name="Aileron-Regular" family="Aileron" pointSize="22"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="3Fm-03-4G7">
-                                                        <rect key="frame" x="135.66666666666666" y="73" width="64" height="2"/>
+                                                        <rect key="frame" x="135.5" y="73" width="64" height="2"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8J-vD-I6b">
-                                                        <rect key="frame" x="152" y="39.333333333333314" width="31.333333333333343" height="32.666666666666657"/>
+                                                        <rect key="frame" x="152" y="39.5" width="31.5" height="32.5"/>
                                                         <fontDescription key="fontDescription" name="Aileron-Regular" family="Aileron" pointSize="27"/>
                                                         <color key="textColor" red="0.078431372550000003" green="0.1450980392" blue="0.31372549020000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgR-ky-vHz" userLabel="rightIntervalButton">
-                                                        <rect key="frame" x="211.33333333333334" y="47" width="12" height="22"/>
+                                                        <rect key="frame" x="211.5" y="47" width="12" height="22"/>
                                                         <state key="normal" image="right"/>
+                                                        <connections>
+                                                            <action selector="increaseInterval:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TLR-AA-lp9"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvj-de-tZs">
                                                         <rect key="frame" x="112" y="47" width="12" height="22"/>
                                                         <state key="normal" image="left"/>
+                                                        <connections>
+                                                            <action selector="decreaseInterval:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9H9-7o-Us8"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrk-Td-6fL">
-                                                        <rect key="frame" x="238.33333333333331" y="54.333333333333307" width="61" height="20.666666666666664"/>
+                                                        <rect key="frame" x="238.5" y="54.5" width="61" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="Aileron-Regular" family="Aileron" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -89,68 +95,100 @@
                                                 <rect key="frame" x="0.0" y="115" width="335" height="90"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9Y-de-8gU">
-                                                        <rect key="frame" x="120.66666666666666" y="10.000000000000002" width="94" height="26.666666666666671"/>
+                                                        <rect key="frame" x="120.5" y="10" width="94" height="26.5"/>
                                                         <fontDescription key="fontDescription" name="Aileron-Regular" family="Aileron" pointSize="22"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1U6-Tv-MkO">
-                                                        <rect key="frame" x="49" y="52.333333333333314" width="35" height="20.666666666666671"/>
+                                                        <rect key="frame" x="49" y="52.5" width="35" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="Aileron-Regular" family="Aileron" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="gUy-3s-IS3" userLabel="leftLine">
-                                                        <rect key="frame" x="94" y="77.666666666666629" width="64" height="2"/>
+                                                        <rect key="frame" x="94" y="77.5" width="64" height="0.0"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="qrg-Iq-qKN" userLabel="rightLine">
-                                                        <rect key="frame" x="213.33333333333337" y="77.666666666666629" width="64" height="2"/>
+                                                        <rect key="frame" x="213.33333333333337" y="75.5" width="64" height="2"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdH-pL-RBN">
-                                                        <rect key="frame" x="188" y="52.333333333333314" width="15.333333333333343" height="20.666666666666671"/>
+                                                        <rect key="frame" x="188" y="52.5" width="15.333333333333343" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="Aileron-Regular" family="Aileron" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6C-CX-joP">
-                                                        <rect key="frame" x="98" y="44.666666666666686" width="53" height="37"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2H-Su-HK1">
+                                                        <rect key="frame" x="98" y="44.5" width="53" height="37"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="37" id="063-yK-BL5"/>
+                                                            <constraint firstAttribute="width" constant="53" id="pfM-n7-ovg"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Aileron-SemiBold" family="Aileron" pointSize="20"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" red="0.078431372550000003" green="0.1450980392" blue="0.31372549020000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="fromTimeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l0P-MF-Vyx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbE-bi-UbV">
+                                                        <rect key="frame" x="220" y="44.5" width="53" height="37"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="53" id="4q7-Fu-G6d"/>
+                                                            <constraint firstAttribute="height" constant="37" id="cAu-iD-Lsd"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="Aileron-SemiBold" family="Aileron" pointSize="20"/>
                                                         <state key="normal" title="10:00">
                                                             <color key="titleColor" red="0.078431372550000003" green="0.1450980392" blue="0.31372549020000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="fromTimeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BJ1-rp-Rcx"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shi-1q-JAp">
-                                                        <rect key="frame" x="217.33333333333337" y="44.666666666666686" width="53" height="37"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkf-LS-Zhk">
+                                                        <rect key="frame" x="98" y="44.5" width="53" height="37"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="37" id="gln-TH-rMK"/>
+                                                            <constraint firstAttribute="width" constant="53" id="qIj-up-9ac"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="Aileron-SemiBold" family="Aileron" pointSize="20"/>
-                                                        <state key="normal" title="20:00">
-                                                            <color key="titleColor" red="0.078431372550000003" green="0.1450980392" blue="0.31372549020000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
-                                                        </state>
-                                                    </button>
+                                                        <color key="textColor" red="0.078431372550000003" green="0.1450980392" blue="0.31372549020000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UrH-CC-l88">
+                                                        <rect key="frame" x="0.0" y="62" width="293" height="47"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="Shi-1q-JAp" firstAttribute="top" secondItem="y9Y-de-8gU" secondAttribute="bottom" constant="8" id="GLw-8Q-Gdo"/>
+                                                    <constraint firstItem="qrg-Iq-qKN" firstAttribute="bottom" secondItem="GbE-bi-UbV" secondAttribute="bottom" constant="-4" id="92C-cF-3sf"/>
+                                                    <constraint firstItem="gkf-LS-Zhk" firstAttribute="leading" secondItem="1U6-Tv-MkO" secondAttribute="trailing" constant="14" id="A2w-Ws-l4M"/>
+                                                    <constraint firstItem="gUy-3s-IS3" firstAttribute="top" secondItem="gkf-LS-Zhk" secondAttribute="bottom" constant="-4" id="GJX-n6-4Xu"/>
+                                                    <constraint firstItem="GbE-bi-UbV" firstAttribute="leading" secondItem="xdH-pL-RBN" secondAttribute="trailing" constant="16.670000000000002" id="HwZ-oL-ZsY"/>
                                                     <constraint firstItem="gUy-3s-IS3" firstAttribute="leading" secondItem="1U6-Tv-MkO" secondAttribute="trailing" constant="10" id="Jjq-Cv-2GP"/>
                                                     <constraint firstItem="qrg-Iq-qKN" firstAttribute="leading" secondItem="xdH-pL-RBN" secondAttribute="trailing" constant="10" id="Lj6-b9-hgO"/>
                                                     <constraint firstItem="1U6-Tv-MkO" firstAttribute="leading" secondItem="zgw-b5-XXl" secondAttribute="leading" constant="49" id="LnJ-qw-88Z"/>
+                                                    <constraint firstItem="L2H-Su-HK1" firstAttribute="leading" secondItem="1U6-Tv-MkO" secondAttribute="trailing" constant="14" id="Q1b-r8-VnP"/>
                                                     <constraint firstItem="y9Y-de-8gU" firstAttribute="centerX" secondItem="zgw-b5-XXl" secondAttribute="centerX" id="Y22-Pk-w5T"/>
                                                     <constraint firstAttribute="height" constant="90" id="a3N-Z5-iNL"/>
-                                                    <constraint firstItem="gUy-3s-IS3" firstAttribute="top" secondItem="y6C-CX-joP" secondAttribute="bottom" constant="-4" id="cy4-N9-P4g"/>
+                                                    <constraint firstItem="GbE-bi-UbV" firstAttribute="top" secondItem="y9Y-de-8gU" secondAttribute="bottom" constant="8" id="dBW-A6-x7X"/>
                                                     <constraint firstItem="y9Y-de-8gU" firstAttribute="top" secondItem="zgw-b5-XXl" secondAttribute="top" constant="10" id="dNY-Lj-7Uc"/>
-                                                    <constraint firstItem="y6C-CX-joP" firstAttribute="leading" secondItem="1U6-Tv-MkO" secondAttribute="trailing" constant="14" id="eba-xK-D3F"/>
-                                                    <constraint firstItem="qrg-Iq-qKN" firstAttribute="top" secondItem="Shi-1q-JAp" secondAttribute="bottom" constant="-4" id="g0L-PN-1zh"/>
+                                                    <constraint firstItem="gkf-LS-Zhk" firstAttribute="top" secondItem="y9Y-de-8gU" secondAttribute="bottom" constant="8" id="g4x-yQ-eLh"/>
+                                                    <constraint firstItem="gUy-3s-IS3" firstAttribute="bottom" secondItem="L2H-Su-HK1" secondAttribute="bottom" constant="-4" id="gSA-6e-5sc"/>
                                                     <constraint firstItem="xdH-pL-RBN" firstAttribute="leading" relation="lessThanOrEqual" secondItem="gUy-3s-IS3" secondAttribute="trailing" priority="999" constant="50" id="gT2-Wq-lVG"/>
-                                                    <constraint firstItem="Shi-1q-JAp" firstAttribute="leading" secondItem="xdH-pL-RBN" secondAttribute="trailing" constant="14" id="imK-U7-nZ6"/>
+                                                    <constraint firstItem="L2H-Su-HK1" firstAttribute="top" secondItem="y9Y-de-8gU" secondAttribute="bottom" constant="8" id="ixE-F1-VYm"/>
                                                     <constraint firstAttribute="bottom" secondItem="1U6-Tv-MkO" secondAttribute="bottom" constant="17" id="kry-E8-cGH"/>
                                                     <constraint firstAttribute="bottom" secondItem="xdH-pL-RBN" secondAttribute="bottom" constant="17" id="x8u-Kn-IB0"/>
-                                                    <constraint firstItem="y6C-CX-joP" firstAttribute="top" secondItem="y9Y-de-8gU" secondAttribute="bottom" constant="8" id="yE8-HL-Dyh"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GjX-Bo-gen">
                                                 <rect key="frame" x="0.0" y="230" width="335" height="90"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXR-ba-58s">
-                                                        <rect key="frame" x="127.66666666666666" y="10" width="79.666666666666657" height="27"/>
+                                                        <rect key="frame" x="128" y="10" width="79.5" height="27"/>
                                                         <fontDescription key="fontDescription" name="Aileron-Regular" family="Aileron" pointSize="22"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -171,20 +209,20 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ua6-Mn-nus" userLabel="topView">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ua6-Mn-nus" userLabel="topView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topView" translatesAutoresizingMaskIntoConstraints="NO" id="CAe-sE-GpB" userLabel="topImage">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="topView" translatesAutoresizingMaskIntoConstraints="NO" id="CAe-sE-GpB" userLabel="topImage">
                                                 <rect key="frame" x="0.0" y="-50" width="375" height="200"/>
                                             </imageView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eTL-gT-zbr" userLabel="circleView">
-                                                <rect key="frame" x="122.66666666666669" y="85" width="130" height="130"/>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eTL-gT-zbr" userLabel="circleView">
+                                                <rect key="frame" x="122.5" y="85" width="130" height="130"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle2" translatesAutoresizingMaskIntoConstraints="NO" id="TGU-es-Tme" userLabel="circleImage">
                                                         <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYr-gw-AWh" userLabel="dayCounterLabel">
-                                                        <rect key="frame" x="42.333333333333329" y="20" width="45.333333333333329" height="90"/>
+                                                        <rect key="frame" x="42.5" y="20" width="45.5" height="90"/>
                                                         <fontDescription key="fontDescription" name="Aileron-SemiBold" family="Aileron" pointSize="75"/>
                                                         <color key="textColor" red="0.078431372550000003" green="0.1450980392" blue="0.31372549020000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -201,7 +239,7 @@
                                                     <constraint firstAttribute="bottom" secondItem="TGU-es-Tme" secondAttribute="bottom" id="ZOf-V0-3nH"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days your back is straight:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAP-AJ-vyN">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Days your back is straight:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAP-AJ-vyN">
                                                 <rect key="frame" x="40" y="7" width="295" height="77"/>
                                                 <fontDescription key="fontDescription" name="Aileron-Bold" family="Aileron" pointSize="32"/>
                                                 <color key="textColor" red="0.92941176470588238" green="0.94509803921568625" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
@@ -221,8 +259,8 @@
                                             <constraint firstItem="CAP-AJ-vyN" firstAttribute="leading" secondItem="ua6-Mn-nus" secondAttribute="leading" constant="40" id="zyC-9b-eqF"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbB-Em-iwj">
-                                        <rect key="frame" x="25.000000000000007" y="190" width="88.666666666666686" height="84"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Settings:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbB-Em-iwj">
+                                        <rect key="frame" x="25" y="190" width="88.5" height="84"/>
                                         <fontDescription key="fontDescription" name="Aileron-SemiBold" family="Aileron" pointSize="22"/>
                                         <color key="textColor" red="0.078431372549019607" green="0.14509803921568626" blue="0.31372549019607843" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -247,7 +285,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KnT-EQ-F3o">
-                                <rect key="frame" x="20" y="713" width="335" height="50"/>
+                                <rect key="frame" x="20" y="602" width="335" height="50"/>
                                 <color key="backgroundColor" red="0.87535458799999999" green="0.18208697439999999" blue="0.52383542059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="hSQ-Tk-GYM"/>
@@ -273,22 +311,23 @@
                         <outlet property="daysCounterLabel" destination="UYr-gw-AWh" id="kNO-ba-S2Q"/>
                         <outlet property="decreaseIntervalButton" destination="rvj-de-tZs" id="xNT-YA-xy7"/>
                         <outlet property="fromLabel" destination="1U6-Tv-MkO" id="Lby-6n-W9I"/>
-                        <outlet property="fromTimeButton" destination="y6C-CX-joP" id="yvc-xv-5Sh"/>
+                        <outlet property="fromTimeLabel" destination="gkf-LS-Zhk" id="JOd-TN-w2y"/>
                         <outlet property="increaseIntervalButton" destination="qgR-ky-vHz" id="g9e-H1-46Z"/>
                         <outlet property="intervalLabel" destination="DQZ-gg-92P" id="fkh-0H-PT4"/>
                         <outlet property="intervalTimeLabel" destination="f8J-vD-I6b" id="gI8-bc-N9d"/>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="PAa-c8-lNN"/>
                         <outlet property="minutesLabel" destination="Hrk-Td-6fL" id="bz4-GJ-cGq"/>
                         <outlet property="saveChangesButton" destination="KnT-EQ-F3o" id="Lxc-yV-E5E"/>
                         <outlet property="scheduleLabel" destination="y9Y-de-8gU" id="RU6-5Y-IDa"/>
                         <outlet property="settingsLabel" destination="cbB-Em-iwj" id="He0-4I-03N"/>
+                        <outlet property="timeFromCOntainer" destination="UrH-CC-l88" id="Psd-d0-ycJ"/>
                         <outlet property="toLabel" destination="xdH-pL-RBN" id="cuP-3J-scP"/>
-                        <outlet property="toTimeButton" destination="Shi-1q-JAp" id="Q9s-eX-RBx"/>
                         <outlet property="topTextLabel" destination="CAP-AJ-vyN" id="NIw-mt-WZZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128.80000000000001" y="135.96059113300493"/>
+            <point key="canvasLocation" x="128.80000000000001" y="135.38230884557723"/>
         </scene>
     </scenes>
     <resources>
